@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Presentes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabeçalho">
+    <img src="folha.png" alt="folha decorativa" class="icon">
+    <h1 class="title">Lista de Presentes</h1>
+  </header>
+
+  <div class="top-bar">
+    <button id="cartButton" class="cart">Carrinho vazio</button>
+
+    <div class="sort">
+      <label for="ordenar">Ordenar lista por:</label>
+      <select id="ordenar">
+        <option value="az">A-Z</option>
+        <option value="preco">Menor Preço</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container" id="giftContainer">
+    <div class="card" data-preco="1693.46">
+      <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+      <h3 class="gift-title">AOC Roku TV Smart TV LED 32”</h3>
+      <p class="gift-price">R$ 1.693,46</p>
+      <button class="gift-button">Presentear</button>
+    </div>
+
+    <div class="card" data-preco="249.66">
+      <img src="aparelhoJantar.webp" alt="Aparelho de jantar" class="gift-image">
+      <h3 class="gift-title">Aparelho de jantar</h3>
+      <p class="gift-price">R$ 249,66</p>
+      <button class="gift-button">Presentear</button>
+    </div>
+
+    <div class="card" data-preco="1693.46">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">AOC Roku TV Smart TV LED 32”</h3>
+  <p class="gift-price">R$ 1.693,46</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="249.66">
+ <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Aparelho de jantar</h3>
+  <p class="gift-price">R$ 249,66</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="96.61">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Aparelho para chá</h3>
+  <p class="gift-price">R$ 96,61</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="296.59">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Aparelho para Jantar e Chá Oxford Daily</h3>
+  <p class="gift-price">R$ 296,59</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="420.36">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Aspirador de Pó e Água Vertical Wap</h3>
+  <p class="gift-price">R$ 420,36</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="107.22">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Assadeira</h3>
+  <p class="gift-price">R$ 107,22</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="215.32">
+   <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Batedeira Philco Paris com 4 Velocidades - Branca</h3>
+  <p class="gift-price">R$ 215,32</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="548.93">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Batedeira Planetária Britânia</h3>
+  <p class="gift-price">R$ 548,93</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="134.06">
+  <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Batedeira Preta</h3>
+  <p class="gift-price">R$ 134,06</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+<div class="card" data-preco="141.55">
+   <img src="tv.webp" alt="AOC Roku TV Smart TV LED 32”" class="gift-image">
+  <h3 class="gift-title">Cafeteira</h3>
+  <p class="gift-price">R$ 141,55</p>
+  <button class="gift-button">Presentear</button>
+</div>
+
+  </div>
+
+  <!-- Carrinho -->
+  <section id="cartSection" class="cart-section hidden">
+    <h2>Meu carrinho</h2>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Descrição do presente</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody id="cartItems"></tbody>
+    </table>
+    <div class="cart-total">
+      <strong>Total:</strong> <span id="cartTotal">R$ 0,00</span>
+    </div>
+
+    <div class="cart-buttons">
+      <button id="addMore" class="btn-gray">Adicionar mais itens</button>
+      <button class="btn-pink">Continuar compra</button>
+    </div>
+  </section>
+
+  <footer class="footerRodapé">
+    <p>Martha & Odilon</p>
+  </footer>
+
+  <script src="funcionalidades.js"></script>
+</body>
+</html>

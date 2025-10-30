@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fcfbfb;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+/* Container geral centraliza todo o conteúdo */
+.container-geral {
+  max-width: 800px; /* diminui para aproximar as colunas */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+  padding: 40px 20px 10px;
+}
+
+.icon {
+  width: 55px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.6em;
+  color: #333;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Barra superior */
+.top-bar {
+  display: flex;
+  flex-direction: column; /* deixa o botão e o select empilhados */
+  align-items: center;
+  gap: 10px;
+  margin: 5px;
+}
+
+/* Botão do carrinho */
+.cart {
+  background-color: #ddb8e1;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 26px;
+  font-size: 15px;
+  color: #f9f6f9;
+  cursor: pointer;
+}
+
+/* Ordenação (fica abaixo do carrinho) */
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Cards dos presentes */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
+  gap: 8px; /* espaço pequeno entre colunas */
+  justify-items: center;
+  margin-top: 20px;
+
+}
+
+
+.card {
+  margin: 0;
+  width: 100%;
+  max-width: 280px; /* um pouco mais largo para preencher melhor */
+  background: #ead3e8;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.gift-image {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+.gift-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #495057;
+  margin: 10px 0 5px;
+}
+
+.gift-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b2b2b;
+  margin: 6px 0 12px;
+}
+
+.gift-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  background-color: #cc71ed;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gift-button:hover {
+  background-color: #b95edc;
+}
+
+/* Carrinho */
+.hidden {
+  display: none;
+}
+
+.cart-section {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.cart-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.cart-table th {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  color: #444;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cart-item img {
+  width: 60px;
+  border-radius: 8px;
+}
+
+.cart-item-title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.remove {
+  color: #d9534f;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-gray,
+.btn-pink {
+  border: none;
+  border-radius: 50px;
+  padding: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-gray {
+  background: #6c757d;
+  color: #fff;
+}
+
+.btn-pink {
+  background: #d97b95;
+  color: #fff;
+}
+
+.footerRodapé {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+  padding-bottom: 20px;
+}
